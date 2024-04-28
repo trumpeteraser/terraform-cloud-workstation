@@ -38,9 +38,9 @@ into your terminal to add it to the `main.tf` file:
 
 ```
 provider "aws" {
-  region                  = var.aws_region
-  shared_credentials_file = var.aws_creds_file
-  profile                 = var.aws_profile
+  region                   = var.aws_region
+  shared_credentials_files = [var.aws_creds_file]
+  profile                  = var.aws_profile
 }
 
 ```   
